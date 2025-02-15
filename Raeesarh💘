@@ -1,73 +1,48 @@
 <!DOCTYPE html>
-<html lang="my">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>မရယ် စိတ်မဆိုးတော့ပါနဲ့..</title>
+    <title>Follow DK Crypto</title>
     <style>
         body {
-            text-align: center;
             font-family: Arial, sans-serif;
-            margin-top: 50px;
-            background-color: #ffeff0;
+            text-align: center;
+            background-color: #f4f4f4;
         }
-        h2 {
-            font-size: 24px;
-            font-weight: bold;
-            color: #ff4d6d;
+        h1 {
+            color: #333;
         }
-        #loveText {
-            font-size: 20px;
-            font-weight: bold;
-            transition: font-size 0.3s ease-in-out;
-            color: #d6336c;
+        .social-links {
+            margin-top: 20px;
         }
-        .button {
-            padding: 10px 20px;
-            font-size: 16px;
+        .social-links a {
+            display: inline-block;
             margin: 10px;
-            cursor: pointer;
-            border: none;
-            border-radius: 10px;
-            color: white;
+            text-decoration: none;
+            font-size: 18px;
         }
-        .happy {
-            background-color: #ff85a2;
-        }
-        .angry {
-            background-color: #ff4d6d;
+        .social-links img {
+            width: 40px;
+            height: 40px;
+            vertical-align: middle;
         }
     </style>
 </head>
 <body>
 
-    <h2>မရယ် 😘 စိတ်မဆိုးတော့ပါနဲ့.. 🥺</h2>
-    
-    <h3 id="loveText">ချစ်တယ် 💕</h3>
-
-    <button class="button happy" onclick="increaseSize()">စိတ်မဆိုးတော့ဘူးရှင် 🤗</button>
-    <button class="button angry" onclick="changeText()">စိတ်ဆိုးမှာဘဲ 😠</button>
-
-    <script>
-        let size = 20;
-        function increaseSize() {
-            size += 10;
-            document.getElementById("loveText").style.fontSize = size + "px";
-        }
-
-        function changeText() {
-            let texts = [
-                "မောင်ကိုမချစ်တော့ဘူးလား 🥺",
-                "အဲ့လိုမလုပ်ပါနဲ့ 😢",
-                "ပြုပြင်ပါမယ်မရယ် 🤗",
-                "အခွင့်အရေးပေးပါနော် 😭",
-                "ခွင့်လွှတ်ပေးပါလို့ 😔",
-                "ချစ်တယ်လေနော် 💕"
-            ];
-            let randomText = texts[Math.floor(Math.random() * texts.length)];
-            document.getElementById("loveText").innerHTML = randomText;
-        }
-    </script>
+    <h1>Follow DK Crypto on Social Media</h1>
+    <div class="social-links">
+        <a href="https://t.me/dkcrypto">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram"> Telegram Channel
+        </a>
+        <a href="https://youtube.com">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_social_white_square_%282017%29.svg" alt="YouTube"> YouTube
+        </a>
+        <a href="https://tiktok.com">
+            <img src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" alt="TikTok"> TikTok
+        </a>
+    </div>
 
 </body>
 </html>
